@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Estilos globales */
+/* Reset básico de márgenes, padding y box-sizing para que los elementos se comporten de manera uniforme */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo base del cuerpo de la página, define fuente, color de fondo, color del texto y padding general */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color:whitesmoke; /* Color gris claro para el fondo */
+    color: #333; /* Color gris oscuro para el texto */
+    padding: 20px;
+}
+
+.centrar-imagen2 {
+    display: block;
+    margin: 0 auto;
+
+
+}
+
+.centrar-imagen{
+    display: block;
+    margin: 0 auto;
+
+}
+
+
+
+/* Separar el nav del header */
+nav {
+    margin-top: 20px; /* Añade margen superior para separarlo del header */
+}
+
+/* Mantén los estilos actuales del nav */
+nav ul {
+    background-color: black;
+    width: 100%;
+    list-style-type: none;
+    text-align: center;
+    border-radius: 12px;
+}
+
+nav li {
+    display: inline-flex;
+}
+
+nav a {
+    text-decoration: none;
+    color: wheat;
+    padding: 10px;
+    width: 150px;
+    gap: 12px;
+}
+
+nav li:hover {
+    background-color: rgb(182, 236, 184);
+}
+
+
+/* Asegura que las imágenes se ajusten al ancho de su contenedor y que mantengan su proporción */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.presentacion__imagen {
+      
+display: block;
+margin-left: auto;
+border-radius:12% ;
+margin-right: auto;
+  }
+
+
+/* Encabezado: Establece el fondo azul y el padding del área de la cabecera */
+.header {
+    background-color: rgb(243, 221, 126); /* Color de fondo */
+    padding: 10px 20px;
+    border-radius: 12%;
+    text-align: center;
+    width: 100%; /* Ocupa el 100% del ancho de la pantalla */
+    margin: 0; /* Elimina los márgenes */
+    box-sizing: border-box; /* Asegura que el padding no expanda el ancho */
+}
+
+
+
+
+/* Menú del encabezado: Se alinea horizontalmente con flexbox y distribuye espacio entre elementos */
+.header__menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #000;
+}
+
+/* Estilo del logotipo del encabezado */
+.header-logo {
+    width: 150px; /* Ajusta el tamaño del logo */
+}
+
+/* Estilo de los enlaces del menú del encabezado */
+.header__menu__link {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 1.2em;
+}
+
+/* Agrega subrayado a los enlaces cuando el usuario pasa el ratón sobre ellos */
+.header__menu__link:hover {
+    text-decoration: none;
+}
+
+/* Sección de presentación: margen y alineación centrada para el contenido */
+.presentacion {
+    margin: 20px 0;
+    text-align: center;
+}
+
+/* Estilo para el título dentro de la sección de presentación */
+.presentacion__contenido__titulo {
+    font-size: 2em;
+    margin-bottom: 15px;
+gap:50% ;
+}
+
+/* Estilo para el texto dentro de la sección de presentación */
+.presentacion__contenido__texto {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    line-height: 1.8; /* Incrementa el espacio entre líneas para mejor legibilidad */
+}
+
+/* Margen para la sección de enlaces dentro de la presentación */
+.presentacion__enlaces {
+    margin: 20px 0;
+}
+
+/* Estilo para los subtítulos dentro de la sección de enlaces */
+.presentacion__enlaces__subtitulos {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+/* Estilo para los enlaces dentro de la presentación */
+.presentacion__enlaces__link {
+    text-decoration: none;
+    color: #007ACC; /* Color azul para destacar los enlaces */
+    font-weight: bold;
+    margin-right: 15px;
+    display: inline-block; /* Asegura que los enlaces se comporten como bloques en línea */
+    margin: 10px; /* Opcional: Añade un poco de espacio entre los enlaces */
+}
+
+/* Ajusta la imagen dentro de los enlaces de la presentación */
+.presentacion__enlaces__link img {
+    width: 30px;
+    vertical-align: middle; /* Alinea verticalmente con el texto */
+    margin-right: 8px;
+}
+
+/* Contenedor de productos: Uso de flexbox para alinear y distribuir los productos en varias filas */
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px; /* Espacio entre los productos */
+    
+}
+
+
+/* Estilo del enlace de producto, con caja blanca, padding y sombra para dar efecto de tarjeta */
+.product-link {
+    width: 200px;
+    text-align: center;
+    margin-bottom: 15px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave alrededor de cada producto */
+    transition: transform 0.3s ease; /* Animación suave para el hover */
+}
+
+/* Efecto de agrandamiento cuando se pasa el ratón sobre un producto */
+.product-link:hover {
+    transform: scale(1.05);
+}
+
+/* Estilo de las imágenes dentro de los enlaces de productos */
+.product-link img {
+    margin-bottom: 8px;
+}
+
+/* Estilo del pie de página: fondo azul, texto blanco y centrado */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer__content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .footer__section {
+    flex: 1;
+    padding: 0 10px;
+  }
+  
+  .footer__section h3 {
+    margin-bottom: 10px;
+  }
+  
+  .footer__link {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .footer__link img {
+    vertical-align: middle;
+    margin-right: 8px;
+  }
+  
+  .footer__bottom {
+    background-color: #222;
+    padding: 10px 0;
+  }
+  
+  .footer__bottom p {
+    margin: 0;
+    font-size: 14px;
+  
+
+
+
+
+
+
+}
+
+  
+
+
+/* Estilos responsivos: ajustes para pantallas con ancho máximo de 768px */
+@media screen and (max-width: 768px) {
+    .header__menu {
+        flex-direction: column; /* Apila el menú verticalmente */
+        align-items: flex-start;
+    }
+
+    .product-container {
+        justify-content: center; /* Centra los productos en pantallas pequeñas */
+    }
+
+    .header__menu__link {
+        margin: 10px 0;
+        font-size: 1.1em; /* Reduce el tamaño del texto en enlaces del menú */
+    }
+}
+
+/* Estilos para pantallas muy pequeñas (ancho máximo de 480px) */
+@media screen and (max-width: 480px) {
+    .header-logo {
+        width: 100px; /* Reduce el tamaño del logotipo */
+    }
+
+    .header__menu__link {
+        font-size: 1em; /* Reduce aún más el tamaño del texto del menú */
+    }
+
+    .presentacion__contenido__titulo {
+        font-size: 1.5em; /* Reduce el tamaño del título en la presentación */
+    }
+
+    .presentacion__contenido__texto {
+        font-size: 1em; /* Reduce el tamaño del texto en la presentación */
+    }
+
+    .product-link {
+        width: 100%; /* Los productos ocupan todo el ancho en pantallas pequeñas */
+    }
+}
+
+/*productoss*/
+
+.product-link {
+background-color: rgb(255, 255, 255);
+border-radius:12% ;
+height:none;
+margin: center;
+width: 150px; height: auto;
+text-align: center; margin-top: 4px; font-size: 12px;
+text-decoration: none; color: inherit;
+
+}
+
+/*js*/
+.highlight {
+    background-color: rgb(236, 236, 194); /* Resaltar el producto encontrado */
+    border: 2px solid #c5fad5;
+    animation: pulse 1s infinite;
+  }
+
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }
+
+
+
+
